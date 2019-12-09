@@ -1,3 +1,9 @@
+
+# INPUT
+echo UPDATER LE TOKEN WAVEFRONT DANS LE SCRIPT
+pause
+
+
 #Disable Firewall
 systemctl stop firewalld
 systemctl disable firewalld
@@ -64,7 +70,7 @@ systemctl enable docker
 # install Wavefront Proxy container
 docker run -d \
     -e WAVEFRONT_URL=https://vmware.wavefront.com/api/ \
-    -e WAVEFRONT_TOKEN=73e0e166-5b8b-4877-9ad8-102d3374ee45 \
+    -e WAVEFRONT_TOKEN=73e333333-3333-3333-3333-333333ee45 \
     -e JAVA_HEAP_USAGE=512m \
     -p 2878:2878 \
     -p 4242:4242 \
