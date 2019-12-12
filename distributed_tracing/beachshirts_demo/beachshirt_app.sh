@@ -21,6 +21,11 @@ echo "WAVEFRONT_KEY = $WAVEFRONT_KEY"
 # ----------
 # yum update -y
 
+# PRE-REQUIS
+#-----------
+yum install -y git
+
+
 
 # install NODE.JS    : https://linuxize.com/post/how-to-install-node-js-on-centos-7/
 #-----------------
@@ -89,7 +94,8 @@ systemctl enable docker
 # CLONE REPO
 #------------
 git clone https://github.com/wavefrontHQ/hackathon.git
-cd hackathon/distributed-tracing/node-js-app
+mv /tmp/hackathon/  /root
+cd /root/hackathon/distributed-tracing/node-js-app
 
 
 # Install Dependencies
