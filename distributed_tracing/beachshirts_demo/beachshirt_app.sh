@@ -125,7 +125,7 @@ npm install
 
 # install Wavefront Proxy
 #------------------------
-docker run -d \
+docker run -d --name wavefrontproxy \
   -e WAVEFRONT_URL=https://vmware.wavefront.com/api/ \
   -e WAVEFRONT_TOKEN=$WAVEFRONT_KEY \
   -e JAVA_HEAP_USAGE=512m \
