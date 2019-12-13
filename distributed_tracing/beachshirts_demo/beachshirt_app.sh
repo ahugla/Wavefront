@@ -161,6 +161,10 @@ docker run -d --name jaeger \
 
 
 
+# arret des containers
+docker stop jaeger
+docker stop wavefrontproxy
+
 # Copy script to start and stop demo
 cd /root
 curl -O https://raw.githubusercontent.com/ahugla/Wavefront/master/distributed_tracing/beachshirts_demo/demo_start_stop.sh
