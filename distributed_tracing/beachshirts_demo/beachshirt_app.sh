@@ -1,8 +1,8 @@
 
 # beachshirt distributed tracing wavefront demo
 # alex h
-# v1.0
-# 12 dec 2019
+# v1.1
+# 13 dec 2019
 
 # source :  
 # https://github.com/wavefrontHQ/hackathon/tree/master/distributed-tracing/node-js-app
@@ -96,6 +96,7 @@ systemctl enable docker
 git clone https://github.com/wavefrontHQ/hackathon.git
 mv /tmp/hackathon/  /root
 cd /root/hackathon/distributed-tracing/node-js-app
+chmod 755 loadgen.sh
 
 
 # Install Dependencies
@@ -162,7 +163,7 @@ docker run -d --name jaeger \
 
 # start the app
 # -------------
-#node beachshirt/app.js
+# node beachshirt/app.js
 
 
 # how to use:
