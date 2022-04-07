@@ -1,5 +1,7 @@
 
 # INPUT
+echo UPDATER LE TOKEN WAVEFRONT DANS LE SCRIPT
+pause
 
 
 #Disable Firewall
