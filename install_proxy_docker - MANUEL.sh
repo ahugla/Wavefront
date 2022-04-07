@@ -38,7 +38,7 @@ yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 
 ## Install docker ce.
-yum update && yum install -y docker-ce-18.06.1.ce
+yum update -y && yum install -y docker-ce-18.06.1.ce
 
 ## Create /etc/docker directory.
 mkdir /etc/docker
